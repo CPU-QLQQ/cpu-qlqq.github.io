@@ -1,0 +1,80 @@
+:root {
+    --color-header-background: #f9f9f9;
+    --color-footer-background: #979797;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-header-background);
+}
+
+.logo {
+    margin-top: 23vh;
+    margin-bottom: 5vh;
+}
+
+h1 {
+    font-size: 48px;
+    color: #404040;
+}
+
+h2 {
+    font-size: 24px;
+    color: #707070;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main section {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.group-icon {
+    padding: 25px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+#commerce h3,
+#experiment h3 {
+    text-align: right;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    background-color: var(--color-footer-background);
+    font-size: 14px;
+    color: white;
+}
+footer div{
+    margin: 10px auto;
+    text-align: center;
+}
