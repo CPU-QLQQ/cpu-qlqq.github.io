@@ -3,7 +3,7 @@
     --color-footer-background: #979797;
 }
 
-
+/* header */
 header {
     display: flex;
     flex-direction: column;
@@ -27,6 +27,7 @@ h2 {
     color: #707070;
 }
 
+/* main */
 main {
     display: flex;
     flex-direction: column;
@@ -43,17 +44,17 @@ main section {
 }
 
 .group-icon {
-    padding: 25px 0;
-    text-align: center;
+    width: 400px;
+    height: 200px;
+}
+
+.group-icon svg {
+    width: 100%;
+    height: 100%;
 }
 
 h3 {
     font-size: 28px;
-}
-
-#commerce h3,
-#experiment h3 {
-    text-align: right;
 }
 
 p {
@@ -61,10 +62,16 @@ p {
     line-height: 1.5em;
 }
 
+#commerce h3,
+#experiment h3 {
+    text-align: right;
+}
+
 .reverse {
     flex-direction: row-reverse;
 }
 
+/* footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -74,7 +81,47 @@ footer {
     font-size: 14px;
     color: white;
 }
-footer div{
+
+footer div {
     margin: 10px auto;
     text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    .logo{
+        margin-top: 24vh;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    main{
+        width: 90vw;
+    }
+    main section{
+        margin: 20px 0;
+    }
+    .group-icon{
+        width: 600px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 14px;
+    }
+    footer{
+        height: 15vh;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:450px){
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 10px;
+    }
 }
