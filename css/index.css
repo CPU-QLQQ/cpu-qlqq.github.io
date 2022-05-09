@@ -206,7 +206,6 @@ main h2 {
 .intro-card {
     position: relative;
     width: 50rem;
-    height: 30rem;
     margin-bottom: 4rem;
     background: #F6F6F6;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
@@ -230,8 +229,7 @@ main h2 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 19.572rem;
-    height: 25.671rem;
+    height: 80%;
 }
 
 .card-title {
@@ -257,7 +255,7 @@ main h2 {
 }
 
 .card-content {
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 0 5rem;
     font-size: 1.6rem;
     font-weight: 400;
@@ -330,7 +328,6 @@ footer img {
 
     .intro-card {
         width: 120rem;
-        height: 36rem;
     }
 
     .card-content {
@@ -345,7 +342,6 @@ footer img {
 
     .intro-card {
         width: 120rem;
-        height: 40rem;
     }
 
     .card-content {
@@ -368,7 +364,6 @@ footer img {
 
     .intro-card {
         width: 130rem;
-        height: 65rem;
     }
 
     .icon {
@@ -398,18 +393,10 @@ footer img {
 }
 
 @media screen and (max-width: 400px) {
-    .intro-card {
-        height: 80rem;
-
-    }
+    
 
     .card-content {
         line-height: 18px;
     }
 }
 
-@media screen and (max-width: 360px) {
-    .intro-card {
-        height: 96rem;
-    }
-}
