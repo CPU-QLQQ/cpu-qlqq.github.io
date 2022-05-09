@@ -1,127 +1,415 @@
-:root {
-    --color-header-background: #f9f9f9;
-    --color-footer-background: #979797;
+@font-face {
+    font-family: "HarmonyOS Sans Black";
+    src: url("../fontdest/HarmonyOS_Sans_Black.eot");
+    /* IE9 */
+    src: url("../fontdest/HarmonyOS_Sans_Black.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fontdest/HarmonyOS_Sans_Black.woff2") format("woff2"),
+        /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+        url("../fontdest/HarmonyOS_Sans_Black.woff") format("woff"),
+        /* chrome, firefox */
+        url("../fontdest/HarmonyOS_Sans_Black.ttf") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url("../fontdest/HarmonyOS_Sans_Black.svg#HarmonyOS Sans Black") format("svg");
+    /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
 
-/* header */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--color-header-background);
+@font-face {
+    font-family: "HarmonyOS Sans";
+    src: url("../fontdest/HarmonyOS_Sans_Bold.eot");
+    /* IE9 */
+    src: url("../fontdest/HarmonyOS_Sans_Bold.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fontdest/HarmonyOS_Sans_Bold.woff2") format("woff2"),
+        /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+        url("../fontdest/HarmonyOS_Sans_Bold.woff") format("woff"),
+        /* chrome, firefox */
+        url("../fontdest/HarmonyOS_Sans_Bold.ttf") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url("../fontdest/HarmonyOS_Sans_Bold.svg#HarmonyOS Sans") format("svg");
+    /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
 
-.logo {
-    margin-top: 23vh;
-    margin-bottom: 5vh;
+
+@font-face {
+    font-family: "HarmonyOS Sans Light";
+    src: url("../fontdest/HarmonyOS_Sans_Light.eot");
+    /* IE9 */
+    src: url("../fontdest/HarmonyOS_Sans_Light.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fontdest/HarmonyOS_Sans_Light.woff2") format("woff2"),
+        /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+        url("../fontdest/HarmonyOS_Sans_Light.woff") format("woff"),
+        /* chrome, firefox */
+        url("../fontdest/HarmonyOS_Sans_Light.ttf") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url("../fontdest/HarmonyOS_Sans_Light.svg#HarmonyOS Sans Light") format("svg");
+    /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
 
-h1 {
-    font-size: 48px;
-    color: #404040;
+
+@font-face {
+    font-family: "HarmonyOS Sans Medium";
+    src: url("../fontdest/HarmonyOS_Sans_Medium.eot");
+    /* IE9 */
+    src: url("../fontdest/HarmonyOS_Sans_Medium.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fontdest/HarmonyOS_Sans_Medium.woff2") format("woff2"),
+        /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+        url("../fontdest/HarmonyOS_Sans_Medium.woff") format("woff"),
+        /* chrome, firefox */
+        url("../fontdest/HarmonyOS_Sans_Medium.ttf") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url("../fontdest/HarmonyOS_Sans_Medium.svg#HarmonyOS Sans Medium") format("svg");
+    /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
 
-h2 {
-    font-size: 24px;
-    color: #707070;
+
+@font-face {
+    font-family: "HarmonyOS Sans";
+    src: url("../fontdest/HarmonyOS_Sans_Regular.eot");
+    /* IE9 */
+    src: url("../fontdest/HarmonyOS_Sans_Regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fontdest/HarmonyOS_Sans_Regular.woff2") format("woff2"),
+        /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+        url("../fontdest/HarmonyOS_Sans_Regular.woff") format("woff"),
+        /* chrome, firefox */
+        url("../fontdest/HarmonyOS_Sans_Regular.ttf") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url("../fontdest/HarmonyOS_Sans_Regular.svg#HarmonyOS Sans") format("svg");
+    /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
 
-/* main */
-main {
-    display: flex;
-    flex-direction: column;
-    width: 60vw;
-    margin: 0 auto;
+
+@font-face {
+    font-family: "HarmonyOS Sans Thin";
+    src: url("../fontdest/HarmonyOS_Sans_Thin.eot");
+    /* IE9 */
+    src: url("../fontdest/HarmonyOS_Sans_Thin.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fontdest/HarmonyOS_Sans_Thin.woff2") format("woff2"),
+        /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+        url("../fontdest/HarmonyOS_Sans_Thin.woff") format("woff"),
+        /* chrome, firefox */
+        url("../fontdest/HarmonyOS_Sans_Thin.ttf") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url("../fontdest/HarmonyOS_Sans_Thin.svg#HarmonyOS Sans Thin") format("svg");
+    /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
 }
 
-main section {
-    display: flex;
-    flex-direction: row;
-    height: 200px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+html {
+    font-size: 10px;
+    font-size: calc(100vw / 153.6);
 }
 
-.group-icon {
-    width: 400px;
-    height: 200px;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "HarmonyOS Sans", Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #FFFFFF;
 }
 
-.group-icon svg {
+img {
     width: 100%;
     height: 100%;
 }
 
-h3 {
-    font-size: 28px;
+svg {
+    width: 100%;
+    height: 100%;
 }
 
-p {
-    font-size: 16px;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(225deg, #FFD1FF 0%, #FAD0C4 100%);
+}
+
+.logo,
+.header-bg {
+    position: absolute;
+}
+
+.logo {
+    left: 7.4rem;
+    top: 4.2rem;
+    font-size: 4.8rem;
+    font-weight: bold;
+    font-family: HarmonyOS Sans;
+}
+
+.header-bg {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-title {
+    text-align: center;
+    font-family: HarmonyOS Sans;
+}
+
+.site-title h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
     line-height: 1.5em;
 }
 
-#commerce h3,
-#experiment h3 {
-    text-align: right;
+.site-title h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.5em;
 }
 
-.reverse {
-    flex-direction: row-reverse;
+.site-title .welcome {
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5em;
 }
 
-/* footer */
+main {
+    background: linear-gradient(170deg, #FFD1FF 0%, #FAD0C4 100%);
+    padding-top: 2.7rem;
+    padding-bottom: 5rem;
+    font-family: HarmonyOS Sans;
+}
+
+main h2 {
+    margin-bottom: 4rem;
+    font-size: 4.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 113.6rem;
+    width: 120rem;
+    margin: 0 auto;
+    padding-left: 3.2rem;
+}
+
+.intro-card {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    margin-bottom: 4rem;
+    background: #F6F6F6;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    color: #3D3D3D;
+    transition: all 0.2s ease-out;
+}
+
+.intro-card:hover {
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.intro-card:nth-child(1),
+.intro-card:nth-child(3) {
+    margin-right: 13.6rem;
+}
+
+.card-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 19.572rem;
+    height: 25.671rem;
+}
+
+.card-title {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 45rem;
+    height: 5rem;
+    justify-content: center;
+}
+
+.card-title h3 {
+    margin-left: 1.6rem;
+    margin-top: 0;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
+.icon {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.card-content {
+    margin: 0 auto;
+    padding: 0 5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 150px;
-    background-color: var(--color-footer-background);
-    font-size: 14px;
-    color: white;
+    text-align: center;
+    background: linear-gradient(0deg, #F2C7F2 0%, #FAD0C4 100%);
+    font-family: HarmonyOS Sans;
+    font-size: 16px;
+    line-height: 1em;
 }
 
 footer div {
-    margin: 10px auto;
-    text-align: center;
+    margin-bottom: 1.5em;
 }
 
-@media screen and (max-width:1200px) {
-    .logo{
-        margin-top: 24vh;
+footer img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width: 1600px) {
+    main h2 {
+        margin-bottom: 10rem;
     }
-    h1{
-        font-size: 32px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    main{
-        width: 90vw;
-    }
-    main section{
-        margin: 20px 0;
-    }
-    .group-icon{
-        width: 600px;
-    }
-    h3{
-        font-size: 24px;
-    }
-    p{
-        font-size: 14px;
-    }
-    footer{
-        height: 15vh;
-        font-size: 12px;
+
+    .intro-card {
+        margin-bottom: 10rem;
     }
 }
-@media screen and (max-width:450px){
-    h3{
+
+@media screen and (max-width: 1152px) {
+    .intro-area {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        width: 90vw;
+    }
+
+    .intro-card {
+        width: 100rem;
+    }
+
+    .intro-card:nth-child(1),
+    .intro-card:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .card-title {
+        justify-content: initial;
+        margin-left: 5rem;
+    }
+
+    .card-content {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main h2 {
+        font-size: 24px;
+    }
+
+    .intro-card {
+        width: 120rem;
+        height: 36rem;
+    }
+
+    .card-content {
+        line-height: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .intro-card {
+        width: 120rem;
+        height: 40rem;
+    }
+
+    .card-content {
+        line-height: 2em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .site-title h1 {
+        font-size: 20px;
+    }
+
+    .site-title h2 {
         font-size: 16px;
     }
-    p{
-        font-size: 10px;
+
+    .welcome {
+        font-size: 16px;
+    }
+
+    .intro-card {
+        width: 130rem;
+        height: 65rem;
+    }
+
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .card-title {
+        margin-bottom: 20px;
+    }
+
+    .card-title h3 {
+        font-size: 16px;
+    }
+
+    .card-content {
+        line-height: 18px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer div {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro-card {
+        height: 80rem;
+
+    }
+
+    .card-content {
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .intro-card {
+        height: 96rem;
     }
 }
