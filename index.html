@@ -87,7 +87,7 @@
                     stroke-linecap="round" stroke-width="32" />
             </symbol>
         </svg>
-        <div style="width: 200px;height: 200px;background-color: green;"></div>
+        <div id="test" style="width: 100vw;height: 200px;background-color: green;"></div>
         <header>
             <div class="logo"><span>QLQQ</span></div>
             <div class="header-bg"><img src="img/header-bg.png" alt="Qing"></div>
@@ -155,7 +155,7 @@
             <div><span>@2022 by 钱柳轻轻</span></div>
         </footer>
         <script type="text/javascript">
-            alert(`你的浏览器视窗宽度：${document.documentElement.clientWidth}\n你的浏览器视窗高度：${document.documentElement.clientHeight}\nfont-size: ${getComputedStyle(document.getElementsByClassName('card-content')[0]).fontSize}`);
+            alert(`你的浏览器视窗宽度：${document.documentElement.clientWidth}\n你的浏览器视窗高度：${document.documentElement.clientHeight}\n根元素font-size: ${getComputedStyle(document.documentElement).fontSize}\n内容font-size: ${getComputedStyle(document.getElementsByClassName('card-content')[0]).fontSize}\nheader宽度: ${getComputedStyle(document.getElementsByTagName('header')[0]).width}`);
         </script>
     </body>
 </html>
