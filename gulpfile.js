@@ -8,14 +8,14 @@ function minifyFont(text, cb) {
 		.pipe(fontmin({
 			text: text
 		}))
-		.pipe(gulp.dest('./fontdest/')) //压缩后的输出目录
+		.pipe(gulp.dest('./fontdest/')) //压缩后字体的输出目录
 		.on('end', cb);
 }
 
 gulp.task('minify-font', (cb) => {
 	var buffers = [];
 	gulp
-		.src(['./index.html']) //HTML文件所在目录请根据自身情况修改
+		.src(['./index.html', './about.html']) //HTML文件所在目录
 		.on('data', function(file) {
 			buffers.push(file.contents);
 		})
