@@ -1,138 +1,819 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
 <head>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="Description" content="钱柳轻轻项目组官方网站" />
-    <meta name="Keywords" content="钱柳轻轻，女性，身材健康，代餐饮料，小程序" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Cache" content="no-cache">
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
     <title>钱柳轻轻，轻饮轻心</title>
-    <link rel="icon" href="./img/logo.png">
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 
-<body>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="position: absolute;width: 0;height: 0;">
-        <symbol id="icon-commerce" viewBox="0 0 1024 1024">
-            <rect width="1024" height="1024" fill="none" />
-            <path
-                d="M-7577.42,50c-13.023,0-23.58-7.163-23.58-16s10.557-16,23.58-16h848.841c13.021,0,23.578,7.163,23.578,16s-10.557,16-23.578,16ZM-6864.5-62V-606a47.5,47.5,0,0,1,47.5-47.5,47.5,47.5,0,0,1,47.5,47.5V-62A47.5,47.5,0,0,1-6817-14.5,47.5,47.5,0,0,1-6864.5-62Zm-224,0V-270a47.5,47.5,0,0,1,47.5-47.5,47.5,47.5,0,0,1,47.5,47.5V-62A47.5,47.5,0,0,1-7041-14.5,47.5,47.5,0,0,1-7088.5-62Zm-224,0V-494a47.5,47.5,0,0,1,47.5-47.5,47.5,47.5,0,0,1,47.5,47.5V-62A47.5,47.5,0,0,1-7265-14.5,47.5,47.5,0,0,1-7312.5-62Zm-224,0V-350a47.5,47.5,0,0,1,47.5-47.5,47.5,47.5,0,0,1,47.5,47.5V-62A47.5,47.5,0,0,1-7489-14.5,47.5,47.5,0,0,1-7536.5-62Z"
-                transform="translate(7665 845.5)" fill="#ba49f2" />
-            <path
-                d="M-7596.313-395.687a16,16,0,0,1,0-22.627l224-224a16,16,0,0,1,22.627,0L-7137-429.628l204.688-204.686L-6952-654h64v64l-21.686-21.686-216,216A15.942,15.942,0,0,1-7137-391a15.942,15.942,0,0,1-11.312-4.686L-7361-608.373l-212.687,212.686A15.95,15.95,0,0,1-7585-391,15.949,15.949,0,0,1-7596.313-395.687Z"
-                transform="translate(7768 1109.5)" fill="rgba(255,207,123,0.97)" />
-        </symbol>
-        <symbol id="icon-art" viewBox="0 0 1024 1024">
-            <rect width="1024" height="1024" fill="none" />
-            <path
-                d="M87.964,13.008a8,8,0,0,1,14.073,0l81.577,150.807a8,8,0,0,1-7.036,11.806H13.423a8,8,0,0,1-7.036-11.806Z"
-                transform="translate(135.634 1024) rotate(-135)" fill="#db92ff" />
-            <path d="M8,0H182a8,8,0,0,1,8,8V78.019a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"
-                transform="translate(825.649 64) rotate(45)" fill="rgba(255,207,123,0.97)" />
-            <path d="M8,0H886a8,8,0,0,1,8,8V182a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z"
-                transform="translate(897.062 264.132) rotate(135)" fill="#ba49f2" />
-        </symbol>
-        <symbol id="icon-experiment" viewBox="0 0 1024 1024">
-            <rect width="1024" height="1024" fill="none" />
-            <path d="M7985,750h256" transform="translate(-4378.917 -6055.578) rotate(45)" fill="none" stroke="#ba49f2"
-                stroke-linecap="round" stroke-width="32" />
-            <path d="M8017,750v800s-.871,64,96,64,96-64,96-64V750" transform="translate(-4388.957 -6044.557) rotate(45)"
-                fill="none" stroke="#ba49f2" stroke-linecap="round" stroke-width="32" />
-            <path d="M8209,558v529.465s.871,27-96,27-96-27-96-27V750Z"
-                transform="translate(-4742.184 -5691.33) rotate(45)" fill="#db92ff" stroke="#ba49f2"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-            <g transform="translate(224 736)" fill="rgba(255,207,123,0.97)">
-                <path
-                    d="M 26 51.5 C 22.55730056762695 51.5 19.21784973144531 50.82585144042969 16.07439994812012 49.49628829956055 C 13.03794002532959 48.21197128295898 10.31081962585449 46.37326049804688 7.968780040740967 44.03121948242188 C 5.626739978790283 41.68917846679688 3.788029909133911 38.96205902099609 2.503710031509399 35.92559814453125 C 1.174149990081787 32.78215026855469 0.5 29.44269943237305 0.5 26 C 0.5 22.55730056762695 1.174149990081787 19.21784973144531 2.503710031509399 16.07439994812012 C 3.788029909133911 13.03794002532959 5.626739978790283 10.31081962585449 7.968780040740967 7.968780040740967 C 10.31081962585449 5.626739978790283 13.03794002532959 3.788029909133911 16.07439994812012 2.503710031509399 C 19.21784973144531 1.174149990081787 22.55730056762695 0.5 26 0.5 C 29.44269943237305 0.5 32.78215026855469 1.174149990081787 35.92559814453125 2.503710031509399 C 38.96205902099609 3.788029909133911 41.68917846679688 5.626739978790283 44.03121948242188 7.968780040740967 C 46.37326049804688 10.31081962585449 48.21197128295898 13.03794002532959 49.49628829956055 16.07439994812012 C 50.82585144042969 19.21784973144531 51.5 22.55730056762695 51.5 26 C 51.5 29.44269943237305 50.82585144042969 32.78215026855469 49.49628829956055 35.92559814453125 C 48.21197128295898 38.96205902099609 46.37326049804688 41.68917846679688 44.03121948242188 44.03121948242188 C 41.68917846679688 46.37326049804688 38.96205902099609 48.21197128295898 35.92559814453125 49.49628829956055 C 32.78215026855469 50.82585144042969 29.44269943237305 51.5 26 51.5 Z"
-                    stroke="none" />
-                <path
-                    d="M 26 1 C 22.62458038330078 1 19.35065841674805 1.660858154296875 16.26918029785156 2.964210510253906 C 13.29232025146484 4.223320007324219 10.61861038208008 6.026050567626953 8.322330474853516 8.322330474853516 C 6.026050567626953 10.61861038208008 4.223320007324219 13.29232025146484 2.964210510253906 16.26918029785156 C 1.660858154296875 19.35065841674805 1 22.62458038330078 1 26 C 1 29.37541961669922 1.660858154296875 32.64933776855469 2.964210510253906 35.73081970214844 C 4.223320007324219 38.70767974853516 6.026050567626953 41.38138961791992 8.322330474853516 43.67766952514648 C 10.61861038208008 45.97394943237305 13.29232025146484 47.77667999267578 16.26918029785156 49.03578948974609 C 19.35065841674805 50.33914184570312 22.62458038330078 51 26 51 C 29.37541961669922 51 32.64933776855469 50.33914184570312 35.73081970214844 49.03578948974609 C 38.70767974853516 47.77667999267578 41.38138961791992 45.97394943237305 43.67766952514648 43.67766952514648 C 45.97394943237305 41.38138961791992 47.77667999267578 38.70767974853516 49.03578948974609 35.73081970214844 C 50.33914184570312 32.64933776855469 51 29.37541961669922 51 26 C 51 22.62458038330078 50.33914184570312 19.35065841674805 49.03578948974609 16.26918029785156 C 47.77667999267578 13.29232025146484 45.97394943237305 10.61861038208008 43.67766952514648 8.322330474853516 C 41.38138961791992 6.026050567626953 38.70767974853516 4.223320007324219 35.73081970214844 2.964210510253906 C 32.64933776855469 1.660858154296875 29.37541961669922 1 26 1 M 26 0 C 40.35939788818359 0 52 11.64059829711914 52 26 C 52 40.35939788818359 40.35939788818359 52 26 52 C 11.64059829711914 52 0 40.35939788818359 0 26 C 0 11.64059829711914 11.64059829711914 0 26 0 Z"
-                    stroke="none" fill="#707070" />
-            </g>
-            <g transform="translate(352 672)" fill="rgba(255,207,123,0.97)">
-                <path
-                    d="M 28.5 56.5 C 24.71980094909668 56.5 21.05294990539551 55.75975036621094 17.60128974914551 54.29983139038086 C 14.26712989807129 52.88959884643555 11.27264022827148 50.87062072753906 8.701009750366211 48.29898834228516 C 6.129380226135254 45.72735977172852 4.110410213470459 42.73286819458008 2.700170040130615 39.39870834350586 C 1.240249991416931 35.94704818725586 0.5 32.28020095825195 0.5 28.5 C 0.5 24.71981048583984 1.240249991416931 21.05294990539551 2.700170040130615 17.60128974914551 C 4.110410213470459 14.26712989807129 6.129380226135254 11.27264976501465 8.701009750366211 8.701009750366211 C 11.27264976501465 6.129380226135254 14.26712989807129 4.110410213470459 17.60128974914551 2.700170040130615 C 21.05294990539551 1.240249991416931 24.71981048583984 0.5 28.5 0.5 C 32.28020095825195 0.5 35.94704818725586 1.240249991416931 39.39870834350586 2.700170040130615 C 42.73286819458008 4.110410213470459 45.72735977172852 6.129380226135254 48.29898834228516 8.701009750366211 C 50.87062072753906 11.27264022827148 52.88959884643555 14.26712989807129 54.29983139038086 17.60128974914551 C 55.75975036621094 21.05294990539551 56.5 24.71980094909668 56.5 28.5 C 56.5 32.28020095825195 55.75975036621094 35.94704818725586 54.29983139038086 39.39870834350586 C 52.88959884643555 42.73286819458008 50.87062072753906 45.72735977172852 48.29898834228516 48.29898834228516 C 45.72735977172852 50.87062072753906 42.73286819458008 52.88959884643555 39.39870834350586 54.29983139038086 C 35.94704818725586 55.75975036621094 32.28020095825195 56.5 28.5 56.5 Z"
-                    stroke="none" />
-                <path
-                    d="M 28.5 1 C 24.78707885742188 1 21.18576049804688 1.726959228515625 17.79605865478516 3.160678863525391 C 14.52149963378906 4.545700073242188 11.58044052124023 6.528690338134766 9.054561614990234 9.054561614990234 C 6.528690338134766 11.58044052124023 4.545700073242188 14.52149963378906 3.160678863525391 17.79605865478516 C 1.726959228515625 21.18576049804688 1 24.78707885742188 1 28.5 C 1 32.21292114257812 1.726959228515625 35.81423950195312 3.160678863525391 39.20394134521484 C 4.545700073242188 42.47850036621094 6.528690338134766 45.41955947875977 9.054561614990234 47.94544219970703 C 11.58044052124023 50.47130966186523 14.52149963378906 52.45429992675781 17.79605865478516 53.83932113647461 C 21.18576049804688 55.27304077148438 24.78707885742188 56 28.5 56 C 32.21292114257812 56 35.81423950195312 55.27304077148438 39.20394134521484 53.83932113647461 C 42.47850036621094 52.45429992675781 45.41955947875977 50.47130966186523 47.94544219970703 47.94544219970703 C 50.47130966186523 45.41955947875977 52.45429992675781 42.47850036621094 53.83932113647461 39.20394134521484 C 55.27304077148438 35.81423950195312 56 32.21292114257812 56 28.5 C 56 24.78707885742188 55.27304077148438 21.18576049804688 53.83932113647461 17.79605865478516 C 52.45429992675781 14.52149963378906 50.47130966186523 11.58044052124023 47.94544219970703 9.054561614990234 C 45.41955947875977 6.528690338134766 42.47850036621094 4.545700073242188 39.20394134521484 3.160678863525391 C 35.81423950195312 1.726959228515625 32.21292114257812 1 28.5 1 M 28.5 0 C 44.24011993408203 0 57 12.75988006591797 57 28.5 C 57 44.24011993408203 44.24011993408203 57 28.5 57 C 12.75988006591797 57 0 44.24011993408203 0 28.5 C 0 12.75988006591797 12.75988006591797 0 28.5 0 Z"
-                    stroke="none" fill="#707070" />
-            </g>
-            <g transform="translate(403 544)" fill="rgba(255,207,123,0.97)">
-                <path
-                    d="M 38.5 76.5 C 33.36980819702148 76.5 28.39335060119629 75.495361328125 23.70883941650391 73.51397705078125 C 19.18388938903809 71.60008239746094 15.11995983123779 68.86006927490234 11.62994003295898 65.37006378173828 C 8.13992977142334 61.88003921508789 5.399919986724854 57.81610870361328 3.486020088195801 53.29116058349609 C 1.504639983177185 48.60665130615234 0.5 43.63019180297852 0.5 38.5 C 0.5 33.36980819702148 1.504639983177185 28.39335060119629 3.486020088195801 23.70883941650391 C 5.399919986724854 19.18388938903809 8.13992977142334 15.11995983123779 11.62994003295898 11.62994003295898 C 15.11995983123779 8.13992977142334 19.18388938903809 5.399919986724854 23.70883941650391 3.486020088195801 C 28.39335060119629 1.504639983177185 33.36980819702148 0.5 38.5 0.5 C 43.63019180297852 0.5 48.60665130615234 1.504639983177185 53.29116058349609 3.486020088195801 C 57.81610870361328 5.399919986724854 61.88003921508789 8.13992977142334 65.37006378173828 11.62994003295898 C 68.86006927490234 15.11995983123779 71.60008239746094 19.18388938903809 73.51397705078125 23.70883941650391 C 75.495361328125 28.39335060119629 76.5 33.36980819702148 76.5 38.5 C 76.5 43.63019180297852 75.495361328125 48.60665130615234 73.51397705078125 53.29116058349609 C 71.60008239746094 57.81610870361328 68.86006927490234 61.88003921508789 65.37006378173828 65.37006378173828 C 61.88003921508789 68.86006927490234 57.81610870361328 71.60008239746094 53.29116058349609 73.51397705078125 C 48.60665130615234 75.495361328125 43.63019180297852 76.5 38.5 76.5 Z"
-                    stroke="none" />
-                <path
-                    d="M 38.5 1 C 33.43708801269531 1 28.52615737915039 1.991355895996094 23.90361022949219 3.946525573730469 C 19.43825531005859 5.835212707519531 15.42775726318359 8.539230346679688 11.98348999023438 11.98348999023438 C 8.539230346679688 15.42775726318359 5.835212707519531 19.43825531005859 3.946525573730469 23.90361022949219 C 1.991355895996094 28.52615737915039 1 33.43708801269531 1 38.5 C 1 43.56291198730469 1.991355895996094 48.47384643554688 3.946525573730469 53.09638977050781 C 5.835212707519531 57.56174468994141 8.539230346679688 61.57224273681641 11.98348999023438 65.01651000976562 C 15.42775726318359 68.46076965332031 19.43825531005859 71.16478729248047 23.90361022949219 73.05347442626953 C 28.52615737915039 75.00864410400391 33.43708801269531 76 38.5 76 C 43.56291198730469 76 48.47384643554688 75.00864410400391 53.09638977050781 73.05347442626953 C 57.56174468994141 71.16478729248047 61.57224273681641 68.46076965332031 65.01651000976562 65.01651000976562 C 68.46076965332031 61.57224273681641 71.16478729248047 57.56174468994141 73.05347442626953 53.09638977050781 C 75.00864410400391 48.47384643554688 76 43.56291198730469 76 38.5 C 76 33.43708801269531 75.00864410400391 28.52615737915039 73.05347442626953 23.90361022949219 C 71.16478729248047 19.43825531005859 68.46076965332031 15.42775726318359 65.01651000976562 11.98348999023438 C 61.57224273681641 8.539230346679688 57.56174468994141 5.835212707519531 53.09638977050781 3.946525573730469 C 48.47384643554688 1.991355895996094 43.56291198730469 1 38.5 1 M 38.5 0 C 59.76296615600586 0 77 17.23703384399414 77 38.5 C 77 59.76296615600586 59.76296615600586 77 38.5 77 C 17.23703384399414 77 0 59.76296615600586 0 38.5 C 0 17.23703384399414 17.23703384399414 0 38.5 0 Z"
-                    stroke="none" fill="#707070" />
-            </g>
-        </symbol>
-        <symbol id="icon-development" viewBox="0 0 1024 1024">
-            <path d="M0,0H1024V1024H0Z" fill="none" />
-            <path d="M64,0H832a64,64,0,0,1,64,64V512a64,64,0,0,1-64,64H64A64,64,0,0,1,0,512V64A64,64,0,0,1,64,0Z"
-                transform="translate(64 224)" fill="none" stroke="#ba49f2" stroke-linecap="round" stroke-width="32" />
-            <path d="M0,0H576" transform="translate(224 928)" fill="none" stroke="#ba49f2" stroke-linecap="round"
-                stroke-width="32" />
-            <path d="M7889,974l-160,160,160,160" transform="translate(-7537 -622)" fill="none" stroke="#ffd17f"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-            <path d="M7729,974l160,160-160,160" transform="translate(-7057 -622)" fill="none" stroke="#ffd17f"
-                stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-            <path d="M8251.328,942,7889,1304.328" transform="matrix(0.966, -0.259, 0.259, 0.966, -7573.876, 1515.819)"
-                fill="none" stroke="#ffd17f" stroke-linecap="round" stroke-width="32" />
-        </symbol>
-    </svg> -->
-    <nav>
-        <div class="logo">
-            <img src="./img/logo.png" alt="logo" />
-            <span>钱柳轻轻</span>
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
         </div>
-        <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="./about/index.html">关于我们</a></li>
-        </ul>
-        <div class="pointer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="clients">Clients</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+    
+                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>欢迎来到钱柳轻轻</h3>
+
+                <h1>
+                    我们以真心与爱心 <br>
+                    持续关注中国女性健康 <br>
+                    科学塑身管理与药膳综合代餐美食 <br>
+                    做健康快乐的新时代女性
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        申请内测
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        关于我们
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>了解更多</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">你好！</h3>
+                <h1 class="display-1 display-1--light">我们是钱柳轻轻团队</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                我们来自中国药科大学钱柳轻轻项目组。扎根药学专业土壤，凭借专业知识和科学研究技能，致力于开发一款链和饮食健康管理与科学塑身
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">127</div>
+                <h5>Awards Received</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1505</div>
+                <h5>Cups of Coffee</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">109</div>
+                <h5>Projects Completed</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">102</div>
+                <h5>Happy Clients</h5> 
+            </div>
+
+        </div> <!-- end about-stats -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What We Do</h3>
+                <h1 class="display-2">We’ve got everything you need to launch and grow your business</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-paint-brush"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Brand Identity</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Illustration</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Marketing</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Web Design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Packaging Design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Web Development</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Recent Works</h3>
+                    <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/portfolio/lady-shutterbug.jpg" 
+                                         srcset="images/portfolio/lady-shutterbug.jpg 1x, images/portfolio/lady-shutterbug@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Shutterbug
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Branding
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                    <img src="images/portfolio/woodcraft.jpg" 
+                                         srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Woodcraft
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Web Design
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                    <img src="images/portfolio/the-beetle.jpg"
+                                         srcset="images/portfolio/the-beetle.jpg 1x, images/portfolio/the-beetle@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    The Beetle
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Web Development
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-grow-green.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                    <img src="images/portfolio/grow-green.jpg" 
+                                         srcset="images/portfolio/grow-green.jpg 1x, images/portfolio/grow-green@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Grow Green
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Branding
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-guitarist.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                    <img src="images/portfolio/guitarist.jpg" 
+                                         srcset="images/portfolio/guitarist.jpg 1x, images/portfolio/guitarist@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Guitarist
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Web Design
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-palmeira.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                    <img src="images/portfolio/palmeira.jpg"
+                                         srcset="images/portfolio/palmeira.jpg 1x, images/portfolio/palmeira@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Palmeira
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Web Design
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+
+    <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Clients</h3>
+                <h1 class="display-2">Glint has been honored to
+                partner up with these clients</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+                    
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/apple.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/atom.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/blackberry.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/dropbox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/envato.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/firefox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/joomla.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/magento.png" /></a>
+                     
+                </div> <!-- end clients -->
+            </div> <!-- end col-full -->
+        </div> <!-- end clients-outer -->
+
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+
+                    <div class="testimonials__slide">
+
+                        <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
+                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
+                        Excepturi nam cupiditate culpa doloremque deleniti repellat.</p>
+
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Tim Cook</span> 
+                            <span class="testimonials__pos">CEO, Apple</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+                        
+                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+
+                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Sundar Pichai</span> 
+                            <span class="testimonials__pos">CEO, Google</span>
+                        </div>
+
+                    </div>
+
+                    <div class="testimonials__slide">
+                        
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Satya Nadella</span> 
+                            <span class="testimonials__pos">CEO, Microsoft</span>
+                        </div>
+
+                    </div>
+
+                </div><!-- end testimonials -->
+                
+            </div> <!-- end col-full -->
+        </div> <!-- end client-testimonials -->
+
+    </section> <!-- end s-clients -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+            </div>
         </div>
-    </nav>
-    <main>
-        <div id="typed-strings">
-            <span color="#17ba17">轻饮轻心</span>
-            <span color="purple">致力于女性身材健康</span>
-        </div>
-        <div class="typing-box">
-            <h1 class="before">🌿 钱柳轻轻，</h1>
-            <h1 class="typing"></h1>
-        </div>
-        <h2>——一款一站式女性身材健康管理服务产品</h2>
-        <div class="welcome">欢迎来到钱柳轻轻项目组主页🎉!</div>
-    </main>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+            
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            1600 Amphitheatre Parkway<br>
+                            Mountain View, CA<br>
+                            94043 US
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            contact@glintsite.com<br>
+                            info@glintsite.com
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            Phone: (+63) 555 1212<br>
+                            Mobile: (+63) 555 0100<br>
+                            Fax: (+63) 555 0101
+                        </p>
+                    </div>
+
+                    <ul class="contact-social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </li>
+                    </ul> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
     <footer>
-        <div><span>@2022 by 轻乾健康管理(南京)有限公司</span></div>
-        <div><a href="https://beian.miit.gov.cn/">ICP备案号：苏ICP备2022030014号</a></div>
-    </footer>
-    <script src="./js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".typing", {
-            stringsElement: "#typed-strings",
-            typeSpeed: 125,
-            smartBackspace: true,
-            backSpeed: 50,
-            backDelay: 500,
-            startDelay: 1000,
-            showCursor: false,
-            loop: true,
-            loopCount: Infinity
-        });
-    </script>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="footer-logo"></div>
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Notified</h4>
+                <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Glint 2017</span> 
+                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
