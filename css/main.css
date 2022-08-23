@@ -2542,7 +2542,7 @@ html.no-csstransitions .home-content__main {
     display: block;
 }
 
-.item-folio__thumb a::before {
+/* .item-folio__thumb a::before {
     display: block;
     background-color: rgba(0, 0, 0, 0.8);
     content: "";
@@ -2581,7 +2581,7 @@ html.no-csstransitions .home-content__main {
     -ms-transform: scale(0.5);
     transform: scale(0.5);
     z-index: 1;
-}
+} */
 
 .item-folio__text {
     position: absolute;

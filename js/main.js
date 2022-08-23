@@ -133,21 +133,21 @@
             });
 
             // bind click event
-            $folioItems.each(function(i) {
+            // $folioItems.each(function(i) {
 
-                $(this).on('click', function(e) {
-                    e.preventDefault();
-                    var options = {
-                        index: i,
-                        showHideOpacity: true
-                    }
+            //     $(this).on('click', function(e) {
+            //         e.preventDefault();
+            //         var options = {
+            //             index: i,
+            //             showHideOpacity: true
+            //         }
 
-                    // initialize PhotoSwipe
-                    var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-                    lightBox.init();
-                });
+            //         // initialize PhotoSwipe
+            //         var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+            //         lightBox.init();
+            //     });
 
-            });
+            // });
 
     };
     
