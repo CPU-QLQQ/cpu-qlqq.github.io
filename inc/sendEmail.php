@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'user@website.com';
+$siteOwnersEmail = 'cpuqlqq@126.com';
 
 
 if($_POST) {
@@ -13,18 +13,18 @@ if($_POST) {
 
     // Check Name
     if (strlen($name) < 2) {
-        $error['name'] = "Please enter your name.";
+        $error['name'] = "";
     }
     // Check Email
     if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-        $error['email'] = "Please enter a valid email address.";
+        $error['email'] = "请输入有效的电子邮件！";
     }
     // Check Message
     if (strlen($contact_message) < 15) {
-        $error['message'] = "Please enter your message. It should have at least 15 characters.";
+        $error['message'] = "请输入您的信息，至少 15 个字符以上。";
     }
     // Subject
-    if ($subject == '') { $subject = "Contact Form Submission"; }
+    if ($subject == '') { $subject = "表单已提交"; }
 
 
     // Set Message
@@ -32,7 +32,7 @@ if($_POST) {
     $message .= "Email address: " . $email . "<br />";
     $message .= "Message: <br />";
     $message .= $contact_message;
-    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+    $message .= "<br /> ----- <br /> This email was sent from qlqq website. <br />";
 
     // Set From: header
     $from =  $name . " <" . $email . ">";
@@ -41,7 +41,7 @@ if($_POST) {
     $headers = "From: " . $from . "\r\n";
     $headers .= "Reply-To: ". $email . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 
     if (!$error) {
@@ -50,7 +50,7 @@ if($_POST) {
         $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
         if ($mail) { echo "OK"; }
-        else { echo "Something went wrong. Please try again."; }
+        else { echo "啊哦！出了些问题，请重试"; }
         
     } # end if - no validation error
 
